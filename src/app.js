@@ -26,6 +26,10 @@ app.put("/products/editar/:id",(req,res)=>{
     const idProducts = req.params
     database.splice(idProducts,1,req.body)  
     })
+    app.delete("/products/eliminar/:id",(req, res)=>{
+        const idProducts = req.params
+        database.splice(idProducts,1)
+    })
 
 
 // se escucha el servidor 
