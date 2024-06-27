@@ -1,4 +1,4 @@
-const databasebd = ("express");
+const databasebd = 
 [
     {
 "id": 1,
@@ -7,3 +7,4 @@ const databasebd = ("express");
 "price": 2.2
     }
 ]
+module.exports = databasebd
