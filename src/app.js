@@ -10,16 +10,16 @@ app.get("/products",(req,res)=>{
     res.json(database)
     
     });
-    // mostrar por id
+    // mostrar el producto por id
     app.get("/products/:id",(req,res)=>{
     const id = req.params.id;
     res.json(database[id]);
     })
-    // agregamos un usuario
+    // agregamos un producto
 app.post("/products/agregar",(req,res)=>{
     const {id, nombre} = req.body 
     database.push(req.body);
-    res.send("usuario agregado")
+    res.send("producto agregado")
 })
 
 

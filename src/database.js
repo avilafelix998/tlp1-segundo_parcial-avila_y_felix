@@ -2,7 +2,7 @@ const databasebd =
 [
     {
 "id": 1,
-"name": "juan",
+"name": "cama",
 "quantity": 2,
 "price": 2.2
     }
