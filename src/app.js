@@ -21,6 +21,11 @@ app.post("/products/agregar",(req,res)=>{
     database.push(req.body);
     res.send("producto agregado")
 })
+//editar un producto
+app.put("/products/editar/:id",(req,res)=>{
+    const idProducts = req.params
+    database.splice(idProducts,1,req.body)  
+    })
 
 
 // se escucha el servidor 
