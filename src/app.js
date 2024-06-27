@@ -13,7 +13,7 @@ app.get("/products",(req,res)=>{
     // mostrar el producto por id
     app.get("/products/:id",(req,res)=>{
     const id = req.params.id;
-    res.json(database[id]);
+    res.json(database[id-1]);
     })
     // agregamos un producto
 app.post("/products/agregar",(req,res)=>{
@@ -26,6 +26,7 @@ app.put("/products/editar/:id",(req,res)=>{
     const idProducts = req.params
     database.splice(idProducts,1,req.body)  
     })
+    //eliminar un producto
     app.delete("/products/eliminar/:id",(req, res)=>{
         const idProducts = req.params
         database.splice(idProducts,1)
