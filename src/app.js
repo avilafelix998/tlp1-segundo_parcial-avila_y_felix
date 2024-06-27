@@ -15,6 +15,14 @@ app.get("/products",(req,res)=>{
     const id = req.params.id;
     res.json(database[id]);
     })
+    // agregamos un usuario
+app.post("/products/agregar",(req,res)=>{
+    const {id, nombre} = req.body 
+    database.push(req.body);
+    res.send("usuario agregado")
+})
+
+
 // se escucha el servidor 
 app.listen(3000, ()=>{
     console.log("servidor funcionando en puerto ",3000);
