@@ -1,7 +1,7 @@
 const databasebd = 
 [
     {
-"id": 1,
+"id": new Date().getTime(),
 "name": "cama",
 "quantity": 2,
 "price": 2.2
